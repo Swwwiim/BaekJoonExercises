@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+
+int main(void) {
+	int n, r = 1, f = 1;
+	int range = 1;
+	cin >> n;
+	while (1) {
+		if (range >= n)
+			break;
+		r = 6 * (f++);
+		range += r;
+	}
+
+	cout << f << endl;
+	return 0;
+}
